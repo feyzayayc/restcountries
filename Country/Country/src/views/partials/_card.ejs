@@ -1,0 +1,16 @@
+<div class="columns is-multiline">
+    <% all.forEach((ulke,index)=> { %>
+        <div class="card" style="width: 18rem;">
+            <img src=" <%- ulke.flags.png %>" class="card-img-top" alt="...">
+            <div class="card-body">
+                <!-- <div class="card" style="width: 18rem;"> -->
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><b>Official : </b><%- ulke.name.official %></li>
+                    <li class="list-group-item"><b>Capital : </b><%- ulke.capital %></li>
+                    <li class="list-group-item"><b>Population : </b><%- ulke.population %></li>
+                </ul>
+                <a href="/<%-index+1 %>" class="btn btn-primary">Go somewhere</a>
+            </div>
+        </div>
+
+        <% }) %>
